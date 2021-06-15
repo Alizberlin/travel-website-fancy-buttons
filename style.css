@@ -1,0 +1,136 @@
+body{
+    font-family: 'Libre Baskerville', serif;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(128, 128, 128, 0.329);
+}
+.left-side, .right-side
+{
+    width: 49vw;
+    height: 100vh;
+    background: rgba(245, 222, 179, 0.4);
+}
+
+.right-side img{
+    object-fit: cover;
+
+}
+nav a
+{
+    text-decoration: none;
+    color: #575757;
+    padding: 1px 3px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 0.3s;
+    position: relative;
+
+}
+nav
+{
+    display: flex;
+    justify-content: space-around;
+    background: rgba(128, 128, 128, 0.26);
+}
+nav a:hover
+{
+    cursor: pointer;
+    color: #000000;
+    background: #575757;
+    box-shadow: 0 0 10px #575757, 0 0 40px #575757, 0 0 80px #575757;
+    font-weight: bolder;
+    transition-delay: 1s;
+    
+}
+
+a span
+{
+    position: absolute;
+    display: block;
+}
+a span:nth-child(1)
+{
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#575757);
+}
+a:hover span:nth-child(1)
+{
+    left: 100%;
+    transition: 1s;
+
+}
+a span:nth-child(3)
+{
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#575757);
+}
+a:hover span:nth-child(3)
+{
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+
+}
+a span:nth-child(2)
+{
+    top: -100%;
+    right: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#575757);
+}
+a:hover span:nth-child(2)
+{
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+
+}
+a span:nth-child(4)
+{
+    bottom: -100%;
+    left: 0%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#575757);
+}
+a:hover span:nth-child(4)
+{
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+
+}
+main
+{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main p
+{
+    text-align: justify;
+    padding: 20px;
+}
+main img
+{
+    border-radius: 15px;
+    margin: 20px;
+}
+footer
+{
+    text-align: right;
+    padding: 5px 20px;
+    background: rgba(128, 128, 128, 0.349);
+}
